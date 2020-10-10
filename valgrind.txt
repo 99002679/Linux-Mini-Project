@@ -1,0 +1,44 @@
+﻿==9910== Memcheck, a memory error detector
+==9910== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9910== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==9910== Command: ./a.out
+==9910== 
+MAXIMUM NUMBER OF PATIENTS ALLOWED PER DAY IN A CLINIC CAN ONLY BE 25. 
+
+ENTER NUMBER OF PATIENTS AND BEDS.
+2
+2
+A solution to the doctor problem using semaphores.
+The doctor is at rest for a while
+Patient-0 Coming to hospital
+Patient-0 arrived at hospital.
+Patient 0 entering waiting room.
+Patient 0 knock up the Doctor.
+The doctor is diagnosing the disease of Patient-0
+The doctor has finished Patient-0 diagnosis
+The doctor is taking rest for a while.
+Patient-0 leaving the Hospital.
+Patient-1 Coming to hospital
+Patient-1 arrived at hospital.
+Patient 1 entering waiting room.
+Patient 1 knock up the Doctor.
+The doctor is diagnosing the disease of Patient-1
+The doctor has finished Patient-1 diagnosis
+The doctor is taking rest for a while.
+Patient-1 leaving the Hospital.
+The Doctor is going home for the day.
+==9910== 
+==9910== HEAP SUMMARY:
+==9910==     in use at exit: 8 bytes in 2 blocks
+==9910==   total heap usage: 7 allocs, 5 frees, 75,336 bytes allocated
+==9910== 
+==9910== LEAK SUMMARY:
+==9910==    definitely lost: 8 bytes in 2 blocks
+==9910==    indirectly lost: 0 bytes in 0 blocks
+==9910==      possibly lost: 0 bytes in 0 blocks
+==9910==    still reachable: 0 bytes in 0 blocks
+==9910==         suppressed: 0 bytes in 0 blocks
+==9910== Rerun with --leak-check=full to see details of leaked memory
+==9910== 
+==9910== For lists of detected and suppressed errors, rerun with: -s
+==9910== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
